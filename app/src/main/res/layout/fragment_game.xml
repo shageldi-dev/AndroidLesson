@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Game">
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        />
+
+   <androidx.core.widget.NestedScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <com.shageldi.androidlessons.View.AppTextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+               android:text="Offline games"
+               android:textStyle="bold"
+               app:tvFont="extrabold"
+               android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+               android:drawableTint="@color/black"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/offlineGamesRec"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:nestedScrollingEnabled="false"
+             android:overScrollMode="never"
+             />
+
+           <com.shageldi.androidlessons.View.AppTextView
+               android:id="@+id/myTv"
+               app:tvFont="regular"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+               android:text="Suggestion for you"
+               android:layout_marginTop="16dp"
+               android:textStyle="bold"
+               android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+               android:drawableTint="@color/black"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/sugRec"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:nestedScrollingEnabled="false"
+              android:overScrollMode="never"
+              />
+
+
+           <TextView
+               android:id="@+id/myT"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp"
+               android:text="Recommended"
+               android:layout_marginTop="16dp"
+               android:textStyle="bold"
+               android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+               android:drawableTint="@color/black"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recoRec"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:nestedScrollingEnabled="false"
+              android:overScrollMode="never"
+              />
+
+
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

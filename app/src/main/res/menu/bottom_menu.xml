@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/game"
+        android:title="Games"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+    <item
+        android:id="@+id/app"
+        android:title="Apps"
+        android:icon="@drawable/ic_baseline_apps_24"/>
+    <item
+        android:id="@+id/book"
+        android:title="Books"
+        android:icon="@drawable/ic_baseline_bookmark_border_24"/>
+</menu>
