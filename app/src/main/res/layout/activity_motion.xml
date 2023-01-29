@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/activity_motion_scene"
+    tools:context=".Activity.Motion">
+
+
+    <com.shageldi.androidlessons.View.AppTextView
+        android:id="@+id/appTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:padding="16dp"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tvFont="extrabold" />
+
+
+    <com.shageldi.androidlessons.View.AppTextView
+        android:id="@+id/appTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="pplication"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/appTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/appTextView2"
+        app:layout_constraintTop_toTopOf="@+id/appTextView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:tvFont="extrabold" />
+
+    <com.shageldi.androidlessons.View.AppTextView
+        android:id="@+id/appTextView"
+        android:layout_width="306dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:padding="16dp"
+        android:text="Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTextView2"
+        app:layout_constraintVertical_bias="0.178"
+        app:tvFont="regular" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

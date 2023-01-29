@@ -5,13 +5,19 @@
       <map>
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/main_gradient.xml" value="0.214" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/rounded.xml" value="0.214" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_local_storage.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_motion.xml" value="0.14928169893816365" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_second.xml" value="0.25" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_view_pager2_lesson.xml" value="0.25" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/banner_item.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_app.xml" value="0.264" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_book.xml" value="0.1" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_game.xml" value="0.264" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_suggestion.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/game_item.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/game_item_skeleton.xml" value="0.25" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/message.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
       </map>
     </option>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092986247138",
+    "project_id": "androidlessons-3708a",
+    "storage_bucket": "androidlessons-3708a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092986247138:android:5367470836439b2079cbbb",
+        "android_client_info": {
+          "package_name": "com.shageldi.androidlessons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092986247138-nl5a7f7m7lfrcu9r5v4vkjchni9e46gr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJy32yoa5bJFWvASWFpH1PVhjd5Lfa4q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092986247138-nl5a7f7m7lfrcu9r5v4vkjchni9e46gr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

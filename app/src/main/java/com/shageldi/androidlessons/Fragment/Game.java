@@ -67,8 +67,8 @@ public class Game extends Fragment {
             @Override
             public void onClick(View view) {
                 Suggestion suggestion=Suggestion.newInstance("5");
-                Utils.hideAdd(suggestion,suggestion.getClass().getSimpleName(),getFragmentManager(),R.id.content);
-                MainActivity.firstFragment=suggestion;
+//                Utils.hideAdd(suggestion,suggestion.getClass().getSimpleName(),getFragmentManager(),R.id.content);
+//                MainActivity.firstFragment=suggestion;
             }
         });
         return binding.getRoot();
@@ -85,12 +85,16 @@ public class Game extends Fragment {
             suggest.add(getRandomGame());
             recommended.add(getRandomGame());
         }
+        GameAdapter adapter=new GameAdapter(context, offlineGames);
 
-        binding.offlineGamesRec.setAdapter(new GameAdapter(context, offlineGames));
         binding.offlineGamesRec.setLayoutManager(new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false));
+        RecyclerView recyclerView=binding.offlineGamesRec;
 
-        binding.sugRec.setAdapter(new GameAdapter(context, suggest));
-        binding.sugRec.setLayoutManager(new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false));
+
+//        binding.offlineGamesRec.setAdapter(adapter);
+//
+//        binding.sugRec.setAdapter(new GameAdapter(context, suggest));
+//        binding.sugRec.setLayoutManager(new LinearLayoutManager(context, RecyclerView.HORIZONTAL, false));
 
 //        binding.recoRec.setAdapter(new GameAdapter(context, recommended));
 //        binding.recoRec.setLayoutManager(new GridLayoutManager(context,2,RecyclerView.HORIZONTAL,false));
