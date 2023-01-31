@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/asl_drawer.xml" value="0.17" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/avd_drawer_close.xml" value="0.17" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/avd_drawer_open.xml" value="0.17" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/ic_drawer.xml" value="0.17" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/ic_drawer_closed.xml" value="0.17" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/main_gradient.xml" value="0.214" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/drawable/rounded.xml" value="0.214" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_drawer_lesson.xml" value="0.176" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_local_storage.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/activity_motion.xml" value="0.14928169893816365" />
@@ -13,6 +19,7 @@
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/banner_item.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_app.xml" value="0.264" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_book.xml" value="0.1" />
+        <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_game.xml" value="0.264" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/fragment_suggestion.xml" value="0.25" />
         <entry key="..\:/Users/Shageldi Alyyew/AndroidStudioProjects/AndroidLessons/app/src/main/res/layout/game_item.xml" value="0.25" />
