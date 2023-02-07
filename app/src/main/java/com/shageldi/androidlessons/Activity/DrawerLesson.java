@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.shageldi.androidlessons.Common.Utils;
 import com.shageldi.androidlessons.Fragment.DrawerFragment;
 import com.shageldi.androidlessons.R;
 import com.shageldi.androidlessons.databinding.ActivityDrawerLessonBinding;
@@ -26,6 +27,7 @@ public class DrawerLesson extends AppCompatActivity {
         binding=ActivityDrawerLessonBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListener();
+        Utils.setWebView(binding.webView,"<marquee><h1>Shageldi</h1></marquee>",DrawerLesson.this);
     }
 
     private void setListener() {

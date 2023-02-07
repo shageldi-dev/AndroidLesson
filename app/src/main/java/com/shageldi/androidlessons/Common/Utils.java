@@ -3,8 +3,14 @@ package com.shageldi.androidlessons.Common;
 import static android.content.Context.MODE_PRIVATE;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.net.Uri;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
@@ -103,5 +109,47 @@ public class Utils {
         ShimmerDrawable shimmerDrawable=new ShimmerDrawable();
         shimmerDrawable.setShimmer(shimmer);
         return shimmerDrawable;
+    }
+
+    public static void setWebView(WebView webView, String code, Context context) {
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+        webView.getSettings().setBuiltInZoomControls(false);
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setLoadsImagesAutomatically(true);
+        String mode = Utils.getSharedPreference(context, "mode");
+        String color = mode.equals("dark") ? "#FFFFFF" : "#000000";
+
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (url != null) {
+                    try{
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        context.startActivity(i);
+                    } catch (Exception ex){
+                        ex.printStackTrace();
+                    }
+                }
+                return true;
+            }
+        });
+
+        webView.getSettings().setUseWideViewPort(true);
+        webView.setWebChromeClient(new WebChromeClient());
+        String margin=code.startsWith("<p>")?"margin-top:-20px;":"";
+
+        String html = "<!DOCTYPE HTML>" +
+                "<head>" +
+                "<meta name='viewport' content='width=device-width, initial-scale=1.0'>" +
+                "</head>" +
+                "<body style='color:" + color + ";max-width:100%;'>" +
+                "<div style='overflow-x: hidden;max-width:100%;width:100%;"+margin+"'>" +
+                code +
+                "</div>" +
+                "</body>" +
+                "</html>";
+        webView.loadDataWithBaseURL(null, html, null, "UTF-8", null);
     }
 }
