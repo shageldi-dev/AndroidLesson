@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.util.Log;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -22,6 +23,12 @@ import com.bumptech.glide.Glide;
 import com.facebook.shimmer.Shimmer;
 import com.facebook.shimmer.ShimmerDrawable;
 import com.shageldi.androidlessons.Model.AppDatabase;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Utils {
     public static void setImage(Context context, String image, ImageView imageView){
@@ -151,5 +158,29 @@ public class Utils {
                 "</body>" +
                 "</html>";
         webView.loadDataWithBaseURL(null, html, null, "UTF-8", null);
+    }
+
+    public static String getWeatherIcon(String icon){
+        return "http://openweathermap.org/img/wn/"+icon+"@2x.png";
+    }
+
+    public static ArrayList<String> getCities(Context context){
+        BufferedReader reader;
+        ArrayList<String> temp=new ArrayList<>();
+        try{
+            final InputStream file = context.getAssets().open("citys.txt");
+            reader = new BufferedReader(new InputStreamReader(file));
+            String line = reader.readLine();
+            while(line != null){
+                Log.d("StackOverflow", line);
+                line = reader.readLine();
+                if(line!=null && !line.trim().isEmpty()){
+                    temp.add(line);
+                }
+            }
+        } catch(IOException ioe){
+            ioe.printStackTrace();
+        }
+        return temp;
     }
 }
